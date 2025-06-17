@@ -6,7 +6,7 @@ on:
       - lesson-2
 jobs:
   deploy:
-    needs: build_and_test
+    needs: [build_and_test]
     runs-on: ubuntu-latest
     defaults:
       run:
