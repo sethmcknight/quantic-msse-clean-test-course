@@ -34,6 +34,6 @@ jobs:
         working-directory: backend
       - name: Run unit tests
         run: |
-          coverage run --source=hangry_api manage.py test
+          coverage run --source=hangry_api hangry_api/manage.py test
           coverage report -m
-        working-directory: backend/hangry_api
+        working-directory: backend
